@@ -7,12 +7,12 @@ assignees: ''
 
 ---
 
-🐞**Describe the bug**<br>
+🐞**Describe the bug**  
 A clear and concise description of the issue. Explain what went wrong and why you believe it's a bug.
 
-🔁**To Reproduce**<br>
+🔁**To Reproduce**  
 Please list the steps to reliably reproduce the issue:
-1. Send a GET request to `/users`
+1. Page `/users`
 2. Use the parameter `page=1`
 3. Receive a 500 Internal Server Error
 
