@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer First Brainstorm</title>
+    <style>
+        /* to change background color */
+        body{
+            background-color: cyan;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <head><h1>Pomodoro Timer First Brainstorm</h1>
-        <h2><strong>brainstorming</strong></h2>
-        <h2>Date:2025-04-08</h2>
-    </head>
+    <h1>Pomodoro Timer First Brainstorm</h1>
+    <h2><strong>brainstorming</strong></h2>
+    <h2>Date:2025-04-08</h2>
     <main>
-     
+
         <hr>
-        <div>
+        <div class="attendanceLi">
+            <h3>attendance list</h3>
             <ol>
-                <h3>attendance list</h3>
                 <li>Elvin Li</li>
                 <li>Evgenii Ruzin</li>
                 <li>Joshua Pham</li>
@@ -28,30 +36,33 @@
         <div>
             <h3>The contents that will be included in the meeting</h3>
             <ol>
-                <li><strong>Project Progress Update Meeting:</strong></li>
-                <ul>
-                    <li>Review of items discussed in the last meeting.</li>
-                    <li>Report on the current project's progress.</li>
-                    <li>Discussion of challenges and bottlenecks encountered.</li>
-                    <li>Set goals and plans for the next phase.</li>
-                    <li>Resource requirements and allocation status.</li>
-                </ul>
-                <li><strong>Team Building Meeting:</strong></li>
-                <ul>
-                    <li>Feedback on team members' performance.</li>
-                    <li>Issues and suggestions for improving team collaboration.</li>
-                    <li>Team activities and building plans.</li>
-                    <li>Identifying training and skill development needs.</li>
-                    <li>Discussion on work-life balance for team members.</li>
-                </ul>
-                <li><strong>Brainstorming Meeting:</strong></li>
-                <ul>
-                    <li>Identify the core issue or goal to discuss.</li>
-                    <li>Encourage the proposal of creative ideas and new solutions.</li>
-                    <li>Evaluate the feasibility of different options.</li>
-                    <li>Summarize and categorize the ideas presented.</li>
-                    <li>Determine the next steps and action plans.</li>
-                </ul>
+                <li><strong>Project Progress Update Meeting:</strong>
+                    <ul>
+                        <li>Review of items discussed in the last meeting.</li>
+                        <li>Report on the current project's progress.</li>
+                        <li>Discussion of challenges and bottlenecks encountered.</li>
+                        <li>Set goals and plans for the next phase.</li>
+                        <li>Resource requirements and allocation status.</li>
+                    </ul>
+                </li>
+                <li><strong>Team Building Meeting:</strong>
+                    <ul>
+                        <li>Feedback on team members' performance.</li>
+                        <li>Issues and suggestions for improving team collaboration.</li>
+                        <li>Team activities and building plans.</li>
+                        <li>Identifying training and skill development needs.</li>
+                        <li>Discussion on work-life balance for team members.</li>
+                    </ul>
+                </li>
+                <li><strong>Brainstorming Meeting:</strong>
+                    <ul>
+                        <li>Identify the core issue or goal to discuss.</li>
+                        <li>Encourage the proposal of creative ideas and new solutions.</li>
+                        <li>Evaluate the feasibility of different options.</li>
+                        <li>Summarize and categorize the ideas presented.</li>
+                        <li>Determine the next steps and action plans.</li>
+                    </ul>
+                </li>
             </ol>
         </div>
         <hr>
@@ -64,16 +75,16 @@
                 <li><input type="checkbox">Code review and sharing of best practices.</li>
             </ul>
         </div>
-    <hr>
-    <div>
-        <h3>things that are new business that need to be talked about</h3>
-        <ul>
-            <li><input type="checkbox">Discussion on technical solutions and architecture.</li>
-            <li><input type="checkbox">Evaluate the feasibility of implementing the technical plan.</li>
-            <li><input type="checkbox">Solve technical challenges encountered during development.</li>
-            <li><input type="checkbox">Code review and sharing of best practices.</li>
-        </ul>
-    </div>
+        <hr>
+        <div>
+            <h3>things that are new business that need to be talked about</h3>
+            <ul>
+                <li><input type="checkbox">Discussion on technical solutions and architecture.</li>
+                <li><input type="checkbox">Evaluate the feasibility of implementing the technical plan.</li>
+                <li><input type="checkbox">Solve technical challenges encountered during development.</li>
+                <li><input type="checkbox">Code review and sharing of best practices.</li>
+            </ul>
+        </div>
         <form>
             <fieldset>
                 <legend>Comment/Question</legend>
@@ -82,10 +93,11 @@
             </fieldset>
         </form>
         <h3>Diagram</h3>
-        <img src="diagram.jpg" width="400"><br>
+        <img src="diagram.jpg" alt="Meeting diagram" width="400"><br>
         <audio src="meeting.mp4" controls>meeting</audio>
         <br>
         <video src="meeting.mp4" controls>meeting</video>
     </main>
 </body>
+
 </html>
