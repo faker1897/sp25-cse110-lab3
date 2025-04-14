@@ -5,24 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer First Brainstorm</title>
-    <style>
-        /* to change background color */
-        body{
-            background-color: cyan;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image_360.png">
 </head>
 
 <body>
-    <h1>Pomodoro Timer First Brainstorm</h1>
-    <h2><strong>brainstorming</strong></h2>
-    <h2>Date:2025-04-08</h2>
+    <header>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h2><strong>brainstorming</strong></h2>
+        <h2>Date:2025-04-08</h2>
+    </header>
     <main>
+        <hr>
+        <details>
+            <summary>Click to see our team page</summary>
+            <nav>
+                <a href="https://elvinlit.github.io/cse110-sp25-group02/admin/team.html">Our team page</a>
+            </nav>
+        </details>
 
         <hr>
-        <div class="attendanceLi">
-            <h3>attendance list</h3>
+        <section>
+            <h3>Intro to this brain storm</h3>
+            <p>
+                In this session, our coding team will explore strategies to <i>enhance productivity</i> and foster
+                innovation. We'll discuss the integration of AI tools like <em>ChatGPT</em> and Notion to streamline
+                routine tasks, improve project management, and assist in rapid prototyping. Additionally, we'll examine
+                the implementation of a four-day workweek to maintain high performance while preventing burnout. The
+                goal is to identify actionable steps that leverage technology and work-life balance to boost efficiency
+                and creativity within our team
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h3><b>attendance list</b></h3>
             <ol>
                 <li>Elvin Li</li>
                 <li>Evgenii Ruzin</li>
@@ -31,7 +46,7 @@
                 <li>Raeed Bourai</li>
                 <li>Vivian Yu</li>
             </ol>
-        </div>
+        </section>
         <hr>
         <div>
             <h3>The contents that will be included in the meeting</h3>
@@ -88,8 +103,31 @@
         <form>
             <fieldset>
                 <legend>Comment/Question</legend>
-                <textarea></textarea>
-                <input type="button" value="submit">
+                <div>
+                    <textarea></textarea>
+                    <input type="button" value="submit">
+                </div>
+                <div>
+                    <label for="APP">Choose a APP to hold a meeting:</label>
+                    <input id="APP" list="APP_list" type="text">
+                    <datalist id="APP_list">
+                        <option value="ZOOM"></option>
+                        <option value="DINGDING"></option>
+                        <option value="FEISHU"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="meetingApp">Choose a APP to hold a meeting:</label>
+                    <select id="meetingApp">
+                        <option value="zoom">Zoom</option>
+                        <option value="teams">Microsoft Teams</option>
+                        <option value="skype">Skype</option>
+                        <option value="googleMeet">Google Meet</option>
+                    </select>
+                </div>
+                <label for="date">Choose a date to hold the meeting</label>
+                <input type="date" id="date">
+
             </fieldset>
         </form>
         <h3>Diagram</h3>
@@ -98,6 +136,10 @@
         <br>
         <video src="meeting.mp4" controls>meeting</video>
     </main>
+    <br>
+    <footer>
+        <span>Thank you</span>
+    </footer>
 </body>
 
 </html>
