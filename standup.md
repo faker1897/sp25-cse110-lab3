@@ -19,4 +19,13 @@ insert time and date and estimated duration
 ## 📢Action Table 
 - [ ] to-do 1 
 - [ ] to learn about JS
+  
+## Material
+Add some reference materials
 
+## The approximate date of the next meeting (i.e., the deadline for completing the task), as well as the checkpoints during the task process.
+1. target1  
+   checkpoint:  
+   1.  date1
+   2. date2  
+ due date:
