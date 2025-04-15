@@ -1,0 +1,10 @@
+@import url(../variables.css);
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+html{
+    color: var(--html-color);
+}
