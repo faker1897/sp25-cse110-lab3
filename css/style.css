@@ -1,0 +1,127 @@
+@import url(variables.css);
+
+*{
+    color: black;
+}
+/* make body as a column box */
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+html{
+    color: var(--html-color);
+}
+header,footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin:0 auto;
+}
+header h2{
+    text-align: center;
+    margin: 1px 1px 1px 1px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+
+.meetingForm:has(#main){
+    display: grid;
+    /* Responsiveness  */
+    width: 100vw; 
+    height: 400px;
+    font-size: small;
+    grid-template-columns: 1fr 1fr; /* two columns each 100px */
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: "main hello1"
+    "hello2 hello3";         /* two raws each 100px */
+    gap: 10px;                                 /* gap */
+}
+#main{
+    grid-area: main;
+    border-radius: 10px;
+    border-width: 5px ;
+    border-color: rgb(20, 98, 200, 0.5);
+    border-style: dotted;
+}
+fieldset.hello1{
+    grid-area: hello1;
+}
+.hello2{
+    grid-area: hello2;
+}
+.hello3{
+    grid-area: hello3;
+}
+
+.meetingForm legend{
+    font-size: larger;
+}
+
+h1{
+    color: aquamarine;
+    margin: 3px;
+    padding: 0%;
+    position:sticky;
+    top: 0;
+}
+h2{
+    color: rgb(123, 23, 64);
+    margin: 3px;
+    padding: 0%;
+    font-size: 4vw;
+    display: block;
+
+}
+h3{
+    color: hsl(293, 100%, 50%)
+}
+.attendance li{
+    font-size: 0.4em;
+    color: #a9a9a9;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-decoration: solid;
+    text-align: center;
+}
+.content > li{
+    font-size: 80%;
+}
+
+video[src]{
+    width: 100vw;
+}
+
+
+
+.playwrite-ro-h1 {
+    font-family: "Playwrite RO", cursive;
+    font-optical-sizing: auto;
+    font-weight: 70px;
+    font-style: normal;
+  }
+
+  .none{
+    display: none;
+  }
+  img[src="diagram.jpg"]{
+    max-width: 400px;
+    max-height: 200px;
+     position: static;
+  }
+  
+  .firsthr ~ .details:hover{
+     summary{
+        color:blue;
+     }
+  }
+  .firstli + li{
+    color:red;
+  }
+  .details:active{
+    &a{
+        color: orchid;
+    }
+  }

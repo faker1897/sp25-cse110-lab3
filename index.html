@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer First Brainstorm</title>
     <link rel="icon" href="image_360.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F5F5F5;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
-        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h1 class="playwrite-ro-h1">Pomodoro Timer First Brainstorm</h1>
         <h2><strong>brainstorming</strong></h2>
         <h2>Date:2025-04-08</h2>
     </header>
+
     <main>
-        <hr>
-        <details>
+        <hr class="firsthr">
+        <!-- teamPage -->
+        <details class="details" id="seeTP">
             <summary>Click to see our team page</summary>
             <nav>
                 <a href="https://elvinlit.github.io/cse110-sp25-group02/admin/team.html">Our team page</a>
@@ -26,7 +38,7 @@
         <hr>
         <section>
             <h3>Intro to this brain storm</h3>
-            <p>
+            <p id="intro-topic">
                 In this session, our coding team will explore strategies to <i>enhance productivity</i> and foster
                 innovation. We'll discuss the integration of AI tools like <em>ChatGPT</em> and Notion to streamline
                 routine tasks, improve project management, and assist in rapid prototyping. Additionally, we'll examine
@@ -38,8 +50,8 @@
         <hr>
         <section>
             <h3><b>attendance list</b></h3>
-            <ol>
-                <li>Elvin Li</li>
+            <ol class="attendance">
+                <li class="firstli">Elvin Li</li>
                 <li>Evgenii Ruzin</li>
                 <li>Joshua Pham</li>
                 <li>Mitchell Moundraty</li>
@@ -50,7 +62,7 @@
         <hr>
         <div>
             <h3>The contents that will be included in the meeting</h3>
-            <ol>
+            <ol class="content">
                 <li><strong>Project Progress Update Meeting:</strong>
                     <ul>
                         <li>Review of items discussed in the last meeting.</li>
@@ -100,8 +112,8 @@
                 <li><input type="checkbox">Code review and sharing of best practices.</li>
             </ul>
         </div>
-        <form>
-            <fieldset>
+        <form class="meetingForm">
+            <fieldset id="main">
                 <legend>Comment/Question</legend>
                 <div>
                     <textarea></textarea>
@@ -125,19 +137,30 @@
                         <option value="googleMeet">Google Meet</option>
                     </select>
                 </div>
-                <label for="date">Choose a date to hold the meeting</label>
-                <input type="date" id="date">
-
+                <div>
+                    <label for="date">Choose a date to hold the meeting</label>
+                    <input type="date" id="date">
+                </div>
+            </fieldset>
+            <fieldset class="hello1">
+                <legend>hello</legend>
+            </fieldset>
+            <fieldset class="hello2">
+                <legend>hello</legend>
+            </fieldset>
+            <fieldset class="hello3">
+                <legend>hello</legend>
             </fieldset>
         </form>
         <h3>Diagram</h3>
-        <img src="diagram.jpg" alt="Meeting diagram" width="400"><br>
+        <img src="diagram.jpg" alt="Meeting diagram">
+        <br>
         <audio src="meeting.mp4" controls>meeting</audio>
         <br>
         <video src="meeting.mp4" controls>meeting</video>
     </main>
     <br>
-    <footer>
+    <footer class="none">
         <span>Thank you</span>
     </footer>
 </body>
